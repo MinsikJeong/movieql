@@ -1,0 +1,38 @@
+/feed/
+/notifications/
+/user/1/
+
+query {
+  feed {
+    comments
+    likeNumber
+  }
+  notifications {
+    isRead
+  }
+  user {
+    username
+    profilePic
+  }
+}
+
+{
+  feed: [
+    {
+      comments: 1,
+      likeNumber: 20
+    }
+  ],
+  notifications: [
+    {
+      isRead: true
+    },
+    {
+      isRead: false
+    }
+  ],
+  user: {
+    username: "nico",
+    profile: "http"
+  }
+}
